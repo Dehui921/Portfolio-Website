@@ -1,0 +1,38 @@
+.footer {
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    padding: 25px 0;
+}
+
+.socialIcons {
+    text-align: center;
+}
+
+.footer ul {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.footer ul li a {
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.footer ul li a:hover {
+    border-bottom: 3px solid rgb(3, 94, 199);
+
+}
+
+
+@media (max-width:767px) {
+
+    .footer{
+        padding: 2rem 3%;
+    }
+}

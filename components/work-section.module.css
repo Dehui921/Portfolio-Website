@@ -1,0 +1,78 @@
+.heading {
+    text-align: center;
+    font-size: 7rem;
+    margin: 5rem 0;
+}
+
+.projectsBox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    place-items: center;
+    gap: 3rem;
+    row-gap: 5rem;
+}
+
+.projectCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-height: 50rem;
+    border: 2px solid rgb(3, 94, 199);
+    border-radius: 3rem;
+    gap: 2rem;
+    padding: 5rem 2rem;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(3, 94, 199);
+    transition: 0.3s ease;
+}
+
+
+.projectCard:hover {
+    box-shadow: 0 0 10px rgb(3, 94, 199),
+        0 0 15px rgb(3, 94, 199);
+    transform: (1.02);
+}
+
+.projectCard img {
+    max-width: 300px;
+    height: 300px;
+    /* border-radius: 2rem; */
+    object-fit: contain;
+}
+
+.projectCard h3 {
+    font-size: 3rem;
+}
+
+.projectCard p {
+    font-size: 1.6rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    box-shadow: 0 0 5px rgb(3, 94, 199);
+    border-radius: 3rem;
+    font-size: 1.8rem;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px rgb(3, 94, 199),
+        0 0 15px rgb(3, 94, 199);
+    transform: scale(1.02);
+}
+
+@media (max-width: 767px) {
+    .projectsBox {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        row-gap: 2rem;
+    }
+
+    .projectCard {
+        max-height: none;
+    }
+}

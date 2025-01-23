@@ -1,0 +1,110 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 5;
+    backdrop-filter: blur(5px); /* 模糊效果 */
+    -webkit-backdrop-filter: blur(5px); /* 為了兼容 Webkit 瀏覽器 */
+}
+
+.headerDisplay{
+    transition: scale(0.8);
+    background-color: rgba(0, 0, 0, 1);
+    color: var(--background);
+}
+
+/* 待修 */
+.logo {
+    font-size: 3rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.8 ease;
+}
+
+.logo:hover {
+    transition: scale(1.1);
+}
+
+.navbar{
+    margin: 0 50px 0 0;
+}
+
+.navbar a {
+    margin: 2px 25px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+
+.navbar a.active {
+    color: rgb(3, 94, 199);
+    border-bottom: 3px solid rgb(3, 94, 199);
+    font-size: 2rem
+}
+
+.navbar a:hover {
+    transition: scale(1.1);
+    font-size: 2rem;
+    color: rgb(3, 94, 199);
+    border-bottom: 3px solid rgb(3, 94, 199);
+}
+
+.menuBtn{
+    display: none;
+}
+
+@media (max-width:767px) {
+    .menuBtn{
+        display: block;
+    }
+
+    .header{
+        padding: 0 5px;
+        justify-content: space-between;
+    }
+    .logo{
+        font-size: 2rem;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -50px;
+        width: 30%;
+        padding: 5px 5px;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid rgb(3, 94, 199);
+        border-bottom: 2px solid rgb(3, 94, 199);
+        display: none;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        transition: none;
+        border-bottom: none;
+    }
+
+    .navbar a.active {
+        color: white;
+        border-bottom: 0px;
+        font-size: 2rem;
+    }
+    
+    .navbar a:hover {
+        color: white;
+        border-bottom: none;
+    }
+
+    .navActive{
+        display: block;
+    }
+}

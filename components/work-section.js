@@ -16,7 +16,7 @@ export default forwardRef(function WorkSection(props, ref) {
                         透過這個專案，我進一步加深了對 Next.js 框架的理解，包括伺服器端渲染 (SSR)、靜態生成 (SSG)，
                         以及如何將現代網頁設計理念應用到實際開發中。
                     </p>
-                    <div className={classes.btn}><a href="https://share-meal-99km85nwr-dehui921s-projects.vercel.app/" target="_blank" rel="noopener noreferrer">Review Project</a></div>
+                    <div className={classes.btn}><a href="https://share-meal-mu.vercel.app/" target="_blank" rel="noopener noreferrer">Review Project</a></div>
                 </div>
                 <div className={classes.projectCard}>
                     <img src={animationImg.src} alt="" />

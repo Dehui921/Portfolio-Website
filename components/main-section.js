@@ -1,6 +1,7 @@
 'use client'
 
 import homeImg from '@/public/homeImage.png'
+import photoImg from '@/public/photo1.jpg'
 import githubImg from '@/public/bxl-github.svg'
 
 import classes from './main-section.module.css'
@@ -25,7 +26,7 @@ export default function MainSection() {
             </div>
             {/* 放大頭貼 */}
             <div className={classes.homeimg}>
-                <img className={`${classes.img} ${classes.pImg}`} src={homeImg.src} alt='Home Image' />
+                <img className={`${classes.img} ${classes.pImg}`} src={photoImg.src} alt='Home Image' />
             </div>
 
         </section >

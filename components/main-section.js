@@ -1,6 +1,5 @@
 'use client'
 
-import homeImg from '@/public/homeImage.png'
 import photoImg from '@/public/photo1.jpg'
 import githubImg from '@/public/bxl-github.svg'
 
